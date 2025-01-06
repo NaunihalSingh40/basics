@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css" />
+    <title>Sign In Form</title>
+</head>
+
+<body>
+    <div id="sign-in-form">
+        <form id="basic-form">
+            <div class="form-header">
+                <h1>Credentials Form</h1>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" required placeholder="example@mail.com" type="email" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" required placeholder="Your password" type="password" />
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input id="number" name="number" placeholder="XXXXXXXXXX" type="tel" maxlength="10" minlength="10" />
+            </div>
+            <div class="form-group">
+                <label for="key">Key</label>
+                <input id="key" name="key" placeholder="Unique key" required/>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input id="age" name="age" min="18" max="100" step="1" type="range" />
+                <p><span id="age-range">50</span></p>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <div>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                    </div>
+                    <div>
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </div>
+                    <div>
+                        <label for="others">Prefer not to say</label>
+                        <input type="radio" id="others" name="gender" value="Prefer not to say">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="stakeholder-type">Stakeholder Type</label>
+                <select id="stakeholder-type" name="stakeholder-type">
+                    <option value="Intern">Intern</option>
+                    <option value="Employee">Employee</option>
+                    <option value="Core Member">Core Member</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" maxlength="200" placeholder="Enter your skills in 200 characters"></textarea>
+            </div>
+            <div class="form-group">
+                <div>
+                    <input id="terms" name="terms" type="checkbox" />
+                    <label for="terms">Accept terms & conditions</label>
+                </div>
+            </div>
+            <div class="form-footer">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="basic.js"></script>
+</body>
+
+</html>

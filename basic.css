@@ -1,0 +1,157 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sign-in form container */
+#sign-in-form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+}
+
+/* Form header */
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form group styling (labels, inputs) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > div {
+    display: flex;
+    align-items: center; /* Align the checkbox and label horizontally */
+    gap: 10px; /* Space between checkbox and label */
+}
+
+/* Label styling */
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Inputs, select, and textareas styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Checkbox styling */
+.form-group input[type="checkbox"] {
+    width: auto;
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Custom checkbox label style */
+.form-group input[type="checkbox"]:checked + label {
+    color: #4CAF50; /* Color change when checked */
+}
+
+/* Radio buttons styling */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.radio-group div {
+    display: flex;
+    align-items: center;
+}
+
+/* Radio input styling */
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+    width: auto;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Radio label styling */
+.radio-group label {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Slider customization */
+.form-group input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Footer styling */
+.form-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.form-footer button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-footer button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+    #sign-in-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-header h1 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea,
+    .form-footer button {
+        font-size: 14px;
+    }
+}
