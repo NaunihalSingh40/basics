@@ -1,0 +1,166 @@
+/* General reset and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6e696;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Dashboard container */
+div {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+/* Profile Section */
+div > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Profile Image */
+img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Profile Info Styling */
+h1#display-email,
+p#display-stakeholder,
+p#display-number {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Skills Section */
+div > div:nth-child(2) {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#display-skills {
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Skill Tags */
+.skill-tag {
+    background-color: #e0f7fa;
+    color: #00796b;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #00796b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #00796b;
+    color: #ffffff;
+}
+
+/* All Credentials Table Section */
+div > div:nth-child(3) {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+}
+
+table th {
+    background-color: #f0f2f5;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    div > div:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #display-skills {
+        font-size: 14px;
+    }
+
+    .skill-tag {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
